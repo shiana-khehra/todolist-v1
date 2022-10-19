@@ -12,7 +12,7 @@ const __dirname = path.dirname(__filename);
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('view engine', 'ejs');
 app.use(express.static("public"));
-mongoose.connect("mongodb://localhost:27017/todolistDB");
+mongoose.connect("mongodb+srv://admin_shiana:AllIsWell*3@atlascluster.ceernlh.mongodb.net/todolistDB");
 
 const itemsSchema = {
     name: String
